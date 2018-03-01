@@ -14,7 +14,7 @@ def get_user_data():
         if error != None:
             return render_template('form.html', error=error)
         else:
-            your_10_minute_function_call() 
+            # your_10_minute_function_call() 
             return redirect(url_for('index'))
     return render_template('form.html')
         
@@ -28,6 +28,3 @@ def check_error(request):
         return "data3 error"
     if request.form['data4'] == "":
         return "data4 error"
-
-def your_10_minute_function_call():
-    # do something here
